@@ -5,6 +5,7 @@ import classes from "./Banner.module.css";
 import vaccination from "../../Assets/vaccination.svg";
 import life from "../../Assets/healthcare.svg";
 import volunteers from "../../Assets/volunteers.svg";
+import IncrementCount from "../IncrementCount/IncrementCount";
 const Banner = () => {
   return (
     <Row justify='center'>
@@ -19,15 +20,21 @@ const Banner = () => {
           <div className={classes.statsSection}>
             <div className={classes.imageStat}>
               <img src={life} alt='life icon' />
-              <p>78155415</p>
+              <p>
+                <IncrementCount number={"300000"} duration={"2"} />
+              </p>
             </div>
             <div className={classes.imageStat}>
               <img src={vaccination} alt='vaccine icon' />
-              <p>78155415</p>
+              <p>
+                <IncrementCount number={"3640000"} duration={"2"} />
+              </p>
             </div>
             <div className={classes.imageStat}>
               <img src={volunteers} alt='volunteer icon' />
-              <p>78155415</p>
+              <p>
+                <IncrementCount number={"500"} duration={"2"} />
+              </p>
             </div>
           </div>
         </div>
