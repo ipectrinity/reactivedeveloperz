@@ -2,24 +2,17 @@ import React from "react";
 import { Col, Row } from "antd";
 import Typewriter from "typewriter-effect";
 import classes from "./Banner.module.css";
-import syringe from "../../Assets/syringe.svg";
+import vaccination from "../../Assets/vaccination.svg";
 import life from "../../Assets/healthcare.svg";
-
+import volunteers from "../../Assets/volunteers.svg";
 const Banner = () => {
   return (
     <Row justify='center'>
-      <Col sm={16} xs={20}>
+      <Col sm={22} xs={22} lg={16} md={22}>
         <div class={classes.staticSlider3}>
           <h1 class={classes.title}>
             <div className={classes.Typewriter}>
-              <Typewriter
-                options={{
-                  strings: ["CHEERS INDIA!!", "INDIA fights COVID-19 back."],
-                  autoStart: true,
-                  loop: true,
-                  delay: 75,
-                }}
-              />
+              INDIA fights back COVID-19.
             </div>
           </h1>
 
@@ -29,11 +22,11 @@ const Banner = () => {
               <p>78155415</p>
             </div>
             <div className={classes.imageStat}>
-              <img
-                style={{ marginLeft: "50px" }}
-                src={syringe}
-                alt='vaccine icon'
-              />
+              <img src={vaccination} alt='vaccine icon' />
+              <p>78155415</p>
+            </div>
+            <div className={classes.imageStat}>
+              <img src={volunteers} alt='volunteer icon' />
               <p>78155415</p>
             </div>
           </div>
@@ -44,6 +37,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-// <img alt="Banner" src={help} className={classes.homeIcons} />
-//           <p>We are helping connect the <span><b>donors</b></span> with the <span><b>recipients</b></span> during this tough COVID pandemic times</p>
