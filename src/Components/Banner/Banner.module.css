@@ -1,0 +1,108 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
+
+/* .introCard {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 20px #aaaaaa29;
+  border-radius: 5px;
+  padding: 20px;
+} */
+
+.staticSlider3 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  padding: 10% 0;
+}
+
+.staticSlider3 h1,
+.staticSlider3 h2,
+.staticSlider3 h3,
+.staticSlider3 h4,
+.staticSlider3 h5,
+.staticSlider3 h6 {
+  color: #3e4555;
+}
+
+.staticSlider3 .title {
+  font-weight: 500;
+  line-height: 50px;
+  font-size: 36px;
+  color: white;
+}
+
+.staticSlider3 .title span {
+  border-bottom: 3px solid #2cdd9b;
+}
+
+.staticSlider3 .textSuccessGradiant {
+  background: #2cdd9b;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #2cdd9b 0%,
+    #1dc8cc 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#2cdd9b),
+    to(#1dc8cc)
+  );
+  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.staticSlider3 {
+  background: #2cdd9b;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #2cdd9b 0%,
+    #1dc8cc 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#2cdd9b),
+    to(#1dc8cc)
+  );
+  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.staticSlider3 {
+  background: #1dc8cc;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #1dc8cc 0%,
+    #2cdd9b 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1dc8cc),
+    to(#2cdd9b)
+  );
+  background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+  background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+  background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%);
+}
+
+.staticSlider3 {
+  padding: 15px 45px;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .staticSlider3 .title {
+    line-height: 30px;
+    font-size: 24px;
+  }
+}
