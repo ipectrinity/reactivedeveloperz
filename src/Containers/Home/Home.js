@@ -16,6 +16,7 @@ const Home = (props) => {
     <ActionSection {...props} />
     <br/><br/>
     <FooterBlock />
+    <br/><br/>
 
   </>
   )

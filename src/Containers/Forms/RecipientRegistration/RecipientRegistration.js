@@ -5,6 +5,7 @@ import AfterForm from "./After/AfterForm";
 import { Col, message, Row } from "antd";
 import firebase from "../../../Firebase/firebaseconfig";
 import "firebase/firestore";
+import FormHeader from "../../../Components/FormHeader/FormHeader";
 
 
 var db = firebase.firestore();
@@ -69,7 +70,7 @@ export default function PlasmaRecipientForm(props) {
       })
       .then((docRef) => {
         setLoading(false)
-        props.history.push('/recipient-registered/'+docRef.id)
+        props.history.push('/recipient-registered/' + docRef.id)
       })
       .catch((error) => {
         setLoading(false)
@@ -80,6 +81,10 @@ export default function PlasmaRecipientForm(props) {
     <>
       <div className={classes.body}>
         <Row justify="center" >
+          <Col lg={8} sm={16} xs={23}>
+            <FormHeader title="Register As A Recipient" onBackPress={() => props.history.push('/')} />
+          </Col>
+
         </Row>
         <Row justify="center" >
           <Col className={classes.formBox} lg={8} sm={16} xs={23}>
