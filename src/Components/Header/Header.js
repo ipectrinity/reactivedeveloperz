@@ -6,12 +6,15 @@ import logo from "../../Assets/help.svg"
 const HeaderBlock = () => {
   return (
   <header className={classes.header}>
-    <img className={classes.logo} src={logo} alt="logo"/>
+    <div style={{display:'flex',alignItems:'center'}}>
+      <img className={classes.logo} src={logo} alt="logo"/>
+      <div className={classes.title}>Covid<span className={classes.subtitle}>R</span>elief</div>
+    </div>
     <div className={classes.group}>
-      <item className={classes.item}> <a href="#footer">Stats </a> </item>
-      <item className={classes.item}> <a href="#footer">Help</a></item>
-      <item className={classes.item}> <a href="#footer">Meditate</a></item>
-      <item className={classes.item}> <a href="#footer">Contact Us</a></item>
+    <a href="#footer"  className={classes.item}><item> Stats</item></a>
+    <a href="#footer"  className={classes.item}><item>Help</item></a>
+    <a href="#footer"  className={classes.item}><item>Meditate</item></a>
+    <a href="#footer"  className={classes.item}><item>Contact Us</item></a>
     </div>
       
   </header> 
