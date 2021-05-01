@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import InfoCard from "../../Components/InfoCard/InfoCard";
-import classes from "../../Forms/RegisterationForm.module.css";
+import InfoCard from "../../../Components/InfoCard/InfoCard";
+import classes from "../../Forms/RegistrationForm.module.css";
 import { Col, Row, Select, Spin } from "antd";
 import firebase from "../../../Firebase/firebaseconfig";
 import { LoadingOutlined } from "@ant-design/icons";
 import { locations } from "../../../Constants/Constants";
-import FormHeader from "../../Components/FormHeader/FormHeader";
+import FormHeader from "../../../Components/FormHeader/FormHeader";
 
 import "firebase/firestore";
 import { checkVerified, timeDifference } from "../../../Utils";
