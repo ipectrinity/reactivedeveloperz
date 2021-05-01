@@ -1,46 +1,82 @@
 import React from "react";
 import { Col, Row, Button } from "antd";
 import classes from "../../Containers/Home/Home.module.css";
+import plasma from "../../Assets/blood.svg"
+import oxygen from "../../Assets/oxygen-tank.svg"
+import food from "../../Assets/spoon-fork-lunch-bag-box.svg"
+import lab from "../../Assets/flask.svg"
+import volunteer from "../../Assets/volunteer.svg"
+
+
 
 const ActionSection = (props) => {
   const changeRoute = (route) => {
     props.history.push(route);
   };
   return (
-    <Row gutter={[32, 32]} justify='center'>
+    <Row justify='center'>
       <Col lg={8} md={11} sm={11} xs={20}>
         <div className={classes.actionCard}>
           <p style={{ textAlign: "left" }}>
             {" "}
-            Let us know what you’re looking for?
+            What are you looking for?
           </p>
           <Button
             onClick={() => changeRoute("register/recipient")}
             block
             className={classes.actionButton}>
-            I am looking for Plasma Donors
+            Looking for Plasma Donors
           </Button>
-
           <Button
             onClick={() => changeRoute("/oxygenCylinders")}
             block
             className={classes.actionButton2}>
-            Want oxygen cylinder?
+            Looking for oxygen cylinder
+          </Button>
+          <Button
+            onClick={() => changeRoute("/oxygenCylinders")}
+            block
+            className={classes.actionButton2}>
+            Looking for food delivery
+          </Button>
+          <Button
+            onClick={() => changeRoute("/oxygenCylinders")}
+            block
+            className={classes.actionButton2}>
+            Looking for volunteers
           </Button>
         </div>
       </Col>
       <Col lg={8} md={11} sm={11} xs={20}>
         <div className={classes.actionCard}>
-          <p style={{ textAlign: "left" }}> How can you help?</p>
-          <Button block className={classes.actionButton}>
-            I want to donate Plasma
-          </Button>
-          <Button
-            onClick={() => changeRoute("/register/Oxygen-cylinders-supply")}
-            block
-            className={classes.actionButton2}>
-            I can get Oxygen Cylinders
-          </Button>
+          <p style={{ textAlign: "left" }}> Come forward to Help!!</p>
+          <div className={classes.iconBox}>
+
+          <Col style={{backgroundColor:'#2F61F5'}} span={11} className={classes.selectedcheckBox1}>
+              <label style={{ textAlign: 'center' }} for="fever">
+              <img className={classes.image} src={plasma} />
+              <div style={{color:'white'}} className={classes.text}> Plasma Donor </div>
+              </label>
+            </Col>
+            <Col span={11} className={classes.selectedcheckBox1}>
+              <label style={{ textAlign: 'center' }} for="fever">
+              <img className={classes.image} src={oxygen} />
+              <div  className={classes.text}> Oxygen Cylinder </div>
+              </label>
+            </Col>
+            <Col span={11} className={classes.selectedcheckBox1}>
+              <label style={{ textAlign: 'center' }} for="fever">
+              <img className={classes.image} src={food} />
+              <div  className={classes.text}> Food Delivery </div>
+              </label>
+            </Col>
+            <Col span={11} className={classes.selectedcheckBox1}>
+              <label style={{ textAlign: 'center' }} for="fever">
+              <img className={classes.image} src={volunteer} />
+              <div  className={classes.text}> Volunteer </div>
+              </label>
+            </Col>
+          </div>
         </div>
       </Col>
     </Row>
