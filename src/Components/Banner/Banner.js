@@ -1,8 +1,9 @@
 import React from "react";
 import { Col, Row } from "antd";
-import help from "../../Assets/help.svg";
 import Typewriter from "typewriter-effect";
 import classes from "./Banner.module.css";
+import syringe from "../../Assets/syringe.svg";
+import life from "../../Assets/healthcare.svg";
 
 const Banner = () => {
   return (
@@ -10,17 +11,32 @@ const Banner = () => {
       <Col sm={16} xs={20}>
         <div class={classes.staticSlider3}>
           <h1 class={classes.title}>
-            <Typewriter
-              options={{
-                strings: [
-                  "<b>CHEERS India!!<b>",
-                  "India fights COVID-19 back.",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
+            <div className={classes.Typewriter}>
+              <Typewriter
+                options={{
+                  strings: ["CHEERS INDIA!!", "INDIA fights COVID-19 back."],
+                  autoStart: true,
+                  loop: true,
+                  delay: 75,
+                }}
+              />
+            </div>
           </h1>
+
+          <div className={classes.statsSection}>
+            <div className={classes.imageStat}>
+              <img src={life} alt='life icon' />
+              <p>78155415</p>
+            </div>
+            <div className={classes.imageStat}>
+              <img
+                style={{ marginLeft: "50px" }}
+                src={syringe}
+                alt='vaccine icon'
+              />
+              <p>78155415</p>
+            </div>
+          </div>
         </div>
       </Col>
     </Row>
