@@ -3,7 +3,7 @@
 - Ritik Gupta 1803010178 3C
 - Sourodeep Gosh Roy 1803010 3D
 - Jaya Gaur 1803010 3B
-- Disha Bahal 1803010 3B
+- Disha Bahal 1803010079 3B
 
 ## Problem Statement: Covid-19: The Pandemic
 
