@@ -1,0 +1,40 @@
+
+.header{
+    background-color: #001529;
+    color: white;
+    display: flex ;
+    justify-content: space-around;
+    min-height: 5rem;
+    align-items: center;
+}
+.group{
+    align-items: center;
+    flex-direction: row;
+}
+.logo{
+    padding: 10px;
+}
+.item{
+    padding: 2px 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+.item >a{
+    color: white;
+}
+.item >a:hover{
+    color: white;
+}
+.item >a:active{
+    color: white;
+}
+
+@media screen and (max-width:600px) { 
+    .logo{
+        display: none;
+    }
+    .item{
+        padding: 2px 0.5rem;
+    }
+
+}
