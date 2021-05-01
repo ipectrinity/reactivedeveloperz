@@ -31,6 +31,7 @@ export default function AfterForm({
             if (index < 4)
               return (
                 <div
+                key={bg+index}
                   onClick={() => onSelect(index)}
                   className={
                     selected === index
@@ -48,6 +49,7 @@ export default function AfterForm({
               return (
                 <div
                   onClick={() => onSelect(index)}
+                  key={bg+index}
                   className={
                     selected === index
                       ? `${classes.bloodGroup} ${classes.selected}`
