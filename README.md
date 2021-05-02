@@ -14,5 +14,7 @@ Enough of this Covid-19 stress, can you make something that can bring positivity
 **_Hosting Link_** - https://reactivedeveloperz.web.app/
 
 **Front-end** : React JS
+
 **Back-end**  : Firebase
+
 **Hosting**   : Firebase
