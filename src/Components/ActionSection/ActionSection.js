@@ -54,19 +54,19 @@ const ActionSection = (props) => {
           <p style={{ textAlign: "left" }}> Come forward to Help!!</p>
           <div className={classes.iconBox}>
 
-          <Col onClick={() => changeRoute("register/Donors")} style={{backgroundColor:'#2F61F5'}} span={11} className={classes.selectedcheckBox1}>
+          <Col onClick={() => changeRoute("register/Donor")} style={{backgroundColor:'#2F61F5'}} span={11} className={classes.selectedcheckBox1}>
               <label style={{ textAlign: 'center' }} for="fever">
               <img className={classes.image} src={plasma} />
               <div style={{color:'white'}} className={classes.text}> Plasma Donor </div>
               </label>
             </Col>
-            <Col onClick={() => changeRoute("register/oxygenCylinders")} span={11} className={classes.selectedcheckBox1}>
+            <Col onClick={() => changeRoute("register/Oxygen-cylinders-supply")} span={11} className={classes.selectedcheckBox1}>
               <label style={{ textAlign: 'center' }} for="fever">
               <img className={classes.image} src={oxygen} />
               <div  className={classes.text}>Provide Oxygen Cylinder </div>
               </label>
             </Col>
-            <Col onClick={() => changeRoute("register/food")} span={11} className={classes.selectedcheckBox1}>
+            <Col onClick={() => changeRoute("register/food-supply")} span={11} className={classes.selectedcheckBox1}>
               <label style={{ textAlign: 'center' }} for="fever">
               <img className={classes.image} src={food} />
               <div  className={classes.text}> Food Delivery </div>
