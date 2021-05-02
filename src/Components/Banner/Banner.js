@@ -13,7 +13,14 @@ const Banner = () => {
         <div class={classes.staticSlider3}>
           <h1 class={classes.title}>
             <div className={classes.Typewriter}>
-              INDIA fights back COVID-19.
+              <Typewriter
+                options={{
+                  strings: ['CHEERS INDIA!!', 'India fights back COVID-19'],
+                  autoStart: true,
+                  loop: true,
+                  delay: 75,
+                }}
+              />
             </div>
           </h1>
 
