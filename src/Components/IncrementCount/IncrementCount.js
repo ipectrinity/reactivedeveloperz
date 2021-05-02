@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const IncrementCount = ({ number, duration }) => {
+const IncrementCount = ({ number, duration, text }) => {
   const [count, setCount] = useState("0");
 
   useEffect(() => {
@@ -22,7 +22,12 @@ const IncrementCount = ({ number, duration }) => {
     // dependency array
   }, [number, duration]);
 
-  return <div>{count}</div>;
+  return (
+    <div>
+      {count}
+      {text}
+    </div>
+  );
 };
 
 export default IncrementCount;

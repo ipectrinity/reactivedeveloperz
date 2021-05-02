@@ -35,7 +35,9 @@
 }
 
 .staticSlider3 .textSuccessGradiant {
-  background: #2cdd9b;
+  /* background: #48c6ef;
+  background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%); */
+  /* background: #2cdd9b;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
     #2cdd9b 0%,
@@ -53,11 +55,15 @@
   background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .staticSlider3 {
-  background: #2cdd9b;
+  background: #09203f;
+  background: linear-gradient(180deg, #09203f 0%, #537895 100%);
+  /* background: #48c6ef;
+  background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%); */
+  /* background: #2cdd9b;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
     #2cdd9b 0%,
@@ -72,11 +78,13 @@
   );
   background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
   background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
-  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%); */
 }
 
 .staticSlider3 {
-  background: #1dc8cc;
+  /* background: #48c6ef;
+  background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%); */
+  /* background: #1dc8cc;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
     #1dc8cc 0%,
@@ -91,7 +99,7 @@
   );
   background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
   background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
-  background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%);
+  background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%); */
 }
 
 .staticSlider3 {
