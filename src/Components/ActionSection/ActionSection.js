@@ -34,9 +34,9 @@ const ActionSection = (props) => {
       <Row id="services" justify='center'>
         <Col lg={8} md={11} sm={11} xs={20}>
           <div className={classes.actionCard}>
-            <p style={{ textAlign: "left" }}>
+            <p className={classes.actionTitle} style={{ textAlign: "left" }}>
               {" "}
-            What are you looking for?
+            What are you <span className={classes.special}>Looking</span> for ?
           </p>
             <Button
               onClick={() => changeRoute("register/recipient")}
@@ -66,7 +66,7 @@ const ActionSection = (props) => {
         </Col>
         <Col lg={8} md={11} sm={11} xs={20}>
           <div className={classes.actionCard}>
-            <p style={{ textAlign: "left" }}> Come forward to Help!!</p>
+            <p className={classes.actionTitle} style={{ textAlign: "left" }}> Come forward to <span className={classes.special}>Help!!</span></p>
             <div className={classes.iconBox}>
 
               <Col onClick={() => changeRoute("register/Donor")} style={{ backgroundColor: '#2F61F5' }} span={11} className={classes.selectedcheckBox1}>

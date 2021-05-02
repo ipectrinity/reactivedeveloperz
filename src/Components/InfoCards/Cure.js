@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Button, Col, Row } from 'antd'
 import classes from './InfoCard.module.css'
 import hot from '../../Assets/hot.svg'
@@ -7,6 +7,9 @@ import vitamins from "../../Assets/vitamin.png"
 import milkBox from '../../Assets/milk-box.png'
 
 export default function Cure(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <Row gutter={[32, 32]} style={{ flexDirection: 'row-reverse' }} justify='center'>
             <Col lg={8} md={11} sm={11} xs={20}>
