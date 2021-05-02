@@ -30,3 +30,19 @@
     height: 100px;
     width: 100px;
 }
+
+
+
+
+
+.actionButton{
+    background-color: white!important;
+    color: #2F61F5!important;
+    text-align: left !important;
+    height: 50px!important;
+    border-radius: 4px!important;
+    border: none!important;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}

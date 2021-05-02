@@ -1,14 +1,14 @@
 import React from 'react'
-import { Col, Row } from 'antd'
+import { Button, Col, Row } from 'antd'
 import classes from './InfoCard.module.css'
 import hot from '../../Assets/hot.svg'
 import oximeter from '../../Assets/oximeter.png'
 import vitamins from "../../Assets/vitamin.png"
 import milkBox from '../../Assets/milk-box.png'
 
-export default function Cure() {
+export default function Cure(props) {
     return (
-        <Row gutter={[32, 32]} style={{flexDirection:'row-reverse'}} justify='center'>
+        <Row gutter={[32, 32]} style={{ flexDirection: 'row-reverse' }} justify='center'>
             <Col lg={8} md={11} sm={11} xs={20}>
                 <Row justify="center">
                     <Col className={classes.SymptompsIcon} span={10}>
@@ -39,7 +39,16 @@ export default function Cure() {
                         <li>Vitamins</li>
                         <li>Turmeric Milk</li>
                     </ul>
+                    <br />
+                    <Button
+                        onClick={() => props.history.push("cure")}
+                        block
+                        className={classes.actionButton}>
+                        Know More
+          </Button>
+                    <br /><br />
                 </div>
+
             </Col>
         </Row>
     )

@@ -23,7 +23,7 @@ const Home = (props) => {
     <br/><br/>
     <Preventions/>
     <br/><br/>
-    <Cure/>
+    <Cure {...props} />
     <br/><br/>
     <FooterBlock />
     
