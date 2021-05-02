@@ -35,71 +35,69 @@
 }
 
 .staticSlider3 .textSuccessGradiant {
-  /* background: #48c6ef;
-  background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%); */
-  /* background: #2cdd9b;
+  background: #09203f;
+  background: linear-gradient(180deg, #09203f 0%, #537895 100%);
+  background: #09203f;
   background: -webkit-linear-gradient(
-    legacy-direction(to right),
-    #2cdd9b 0%,
-    #1dc8cc 100%
+    legacy-direction(to bottom),
+    #09203f 0%,
+    #537895 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#2cdd9b),
-    to(#1dc8cc)
+    from(#09203f),
+    to(#537895)
   );
-  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
-  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
-  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+  background: -webkit-linear-gradient(top, #09203f 0%, #537895 100%);
+  background: -o-linear-gradient(top, #09203f 0%, #537895 100%);
+  background: linear-gradient(to bottom, #09203f 0%, #537895 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
 }
 
 .staticSlider3 {
   background: #09203f;
   background: linear-gradient(180deg, #09203f 0%, #537895 100%);
-  /* background: #48c6ef;
-  background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%); */
-  /* background: #2cdd9b;
+
   background: -webkit-linear-gradient(
-    legacy-direction(to right),
-    #2cdd9b 0%,
-    #1dc8cc 100%
+    legacy-direction(to bottom),
+    #09203f 0%,
+    #537895 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#2cdd9b),
-    to(#1dc8cc)
+    from(#09203f),
+    to(#537895)
   );
-  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
-  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
-  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%); */
+  background: -webkit-linear-gradient(left, #09203f 0%, #537895 100%);
+  background: -o-linear-gradient(top, #09203f 0%, #537895 100%);
+  background: linear-gradient(to bottom, #09203f 0%, #537895 100%);
 }
 
 .staticSlider3 {
-  /* background: #48c6ef;
-  background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%); */
-  /* background: #1dc8cc;
+  background: #09203f;
+  background: linear-gradient(180deg, #09203f 0%, #537895 100%);
+  background: #09203f;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
-    #1dc8cc 0%,
-    #2cdd9b 100%
+    #09203f 0%,
+    #537895 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#1dc8cc),
-    to(#2cdd9b)
+    from(#09203f),
+    to(#537895)
   );
-  background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
-  background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
-  background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%); */
+  background: -webkit-linear-gradient(top, #09203f 0%, #537895 100%);
+  background: -o-linear-gradient(top, #09203f 0%, #537895 100%);
+  background: linear-gradient(to bottom, #09203f 0%, #537895 100%);
 }
 
 .staticSlider3 {
@@ -137,6 +135,10 @@
   font-size: 48px;
 }
 
+.category {
+  font-size: 30px !important;
+}
+
 @media (max-width: 767px) {
   .staticSlider3 .title {
     line-height: 30px;
@@ -161,6 +163,10 @@
   .imageStat img {
     height: 125px;
     width: 125px;
+  }
+
+  .category {
+    font-size: 30px !important;
   }
 
   .imageStat p {
@@ -188,6 +194,10 @@
     width: 110px;
   }
 
+  .category {
+    font-size: 25px !important;
+  }
+
   .imageStat p {
     color: white;
     font-size: 35px;
@@ -209,9 +219,13 @@
     margin-top: 80px;
   }
 
+  .category {
+    font-size: 20px !important;
+  }
+
   .imageStat img {
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
   }
 
   .imageStat p {
@@ -266,6 +280,10 @@
     width: 90px;
   }
 
+  .category {
+    font-size: 15px !important;
+  }
+
   .imageStat p {
     color: white;
     font-size: 20px;
@@ -291,6 +309,10 @@
     margin-bottom: 20px;
   }
 
+  .category {
+    font-size: 25px !important;
+  }
+
   .imageStat img {
     height: 130px;
     width: 130px;
@@ -299,5 +321,11 @@
   .imageStat p {
     color: white;
     font-size: 30px;
+  }
+}
+
+@media (max-width: 330px) {
+  .category {
+    font-size: 20px !important;
   }
 }
