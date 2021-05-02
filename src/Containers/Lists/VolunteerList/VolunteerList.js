@@ -22,6 +22,7 @@ export default function VolunteerList(props) {
           volArr.push(doc.data());
         });
         setVolunteerList(checkAvailability(volArr));
+        console.log(checkAvailability(volArr));
       })
       .catch((error) => {
         console.log("Error getting documents: ", error);
@@ -33,7 +34,7 @@ export default function VolunteerList(props) {
       <Row justify='center'>
         <Col lg={8} sm={16} xs={23}>
           <FormHeader
-            title='List of Available Doctors'
+            title='List of Available Volunteers'
             onBackPress={() => props.history.push("/")}
           />
         </Col>
