@@ -8,7 +8,12 @@ import OxygenCylinderRegistration from "../Containers/Forms/OxygenCylinderRegist
 import OxygenCylinderList from "./Lists/OxygenCylindersList/OxygenCylindersList";
 import SubmitPage from "../Components/SubmitPage/SubmitPage";
 import FoodList from "./Lists/FoodList/FoodList";
+import Cure from "./Cure/Cure";
 import VolunteerList from "./Lists/VolunteerList/VolunteerList";
+
+
+
+
 export default function Root() {
   return (
     <div>
@@ -43,6 +48,7 @@ export default function Root() {
           component={SubmitPage}
         />
         <Route path='/food-supply-registered/:docId' component={SubmitPage} />
+        <Route path="/cure" component={Cure}/>
         <Route path='/' component={Home} />
       </Switch>
     </div>
