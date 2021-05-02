@@ -28,7 +28,7 @@ export default function Root() {
           path='/register/Oxygen-cylinders-supply'
           component={OxygenCylinderRegistration}
         />
-        <Route exact path='/doctors' />
+        <Route exact path='/volunteer' />
         <Route exact path='/food' component={FoodList} />
         <Route exact path='/oxygenCylinders' component={OxygenCylinderList} />
         <Route exact path='/labtestcenters' />

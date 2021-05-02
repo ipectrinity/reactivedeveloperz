@@ -11,9 +11,8 @@ const HeaderBlock = () => {
       <div className={classes.title}>Covid<span className={classes.subtitle}>R</span>elief</div>
     </div>
     <div className={classes.group}>
-    <a href="#footer"  className={classes.item}><item> Stats</item></a>
-    <a href="#footer"  className={classes.item}><item>Help</item></a>
-    <a href="#footer"  className={classes.item}><item>Meditate</item></a>
+    <a href="#services"  className={classes.item}><item> Services</item></a>
+    <a href="#symptoms"  className={classes.item}><item>Covid-19</item></a>
     <a href="#footer"  className={classes.item}><item>Contact Us</item></a>
     </div>
       
