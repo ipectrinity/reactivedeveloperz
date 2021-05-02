@@ -34,7 +34,7 @@ export default function InfoCard({
             </p>
           )}
         </div>
-        {type === "doctors" ? (
+        {type === "volunteer" ? (
           <a target='blank' href={`https://wa.me/91${phone}`}>
             <Button
               className={classes.Button}
@@ -54,7 +54,7 @@ export default function InfoCard({
           </a>
         )}
       </div>
-      {type === "doctors" ? (
+      {type === "volunteer" ? (
         <div className={classes.available}>
           {available && <div className={classes.status}>Available Now</div>}
           <div>
