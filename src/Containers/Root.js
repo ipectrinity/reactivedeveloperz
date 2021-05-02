@@ -3,7 +3,10 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./Home/Home";
 import RecipientRegistration from "../Containers/Forms/RecipientRegistration/RecipientRegistration";
 import DonorRegistration from "../Containers/Forms/DonorRegistration/DonorRegistration";
+import FoodRegistration from "../Containers/Forms/FoodRegistration/FoodRegistration";
+import OxygenCylinderRegistration from "../Containers/Forms/OxygenCylinderRegistration/OxygenCylinderRegistration";
 import OxygenCylinderList from "./Lists/OxygenCylindersList/OxygenCylindersList";
+import SubmitPage from '../Components/SubmitPage/SubmitPage'
 export default function Root() {
   return (
     <div>
@@ -14,10 +17,38 @@ export default function Root() {
           component={RecipientRegistration}
         />
         <Route exact path='/register/donor' component={DonorRegistration} />
+        <Route exact path='/register/food-supply' component={FoodRegistration} />
+        <Route
+          exact
+          path='/register/Oxygen-cylinders-supply'
+          component={OxygenCylinderRegistration}
+        />
         <Route exact path='/doctors' />
         <Route exact path='/food' />
         <Route exact path='/oxygenCylinders' component={OxygenCylinderList} />
         <Route exact path='/labtestcenters' />
+
+        <Route
+          path='/recipient-registered/:docId'
+          component={SubmitPage}
+        />
+        <Route
+          path='/consultant-registered/:docId'
+          component={SubmitPage}
+        />
+        <Route
+          path='/patient-registered/:docId'
+          component={SubmitPage}
+        />
+
+        <Route
+          path='/oxygen-cylinder-registered/:docId'
+          component={SubmitPage}
+        />
+        <Route
+          path='/food-supply-registered/:docId'
+          component={SubmitPage}
+        />
         <Route path='/' component={Home} />
       </Switch>
     </div>
