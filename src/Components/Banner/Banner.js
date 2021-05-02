@@ -44,3 +44,12 @@ const Banner = () => {
 };
 
 export default Banner;
+
+<Typewriter
+  options={{
+    strings: ['CHEERS INDIA!!', 'India fights back COVID-19'],
+    autoStart: true,
+    loop: true,
+    delay: 75,
+  }}
+/>
