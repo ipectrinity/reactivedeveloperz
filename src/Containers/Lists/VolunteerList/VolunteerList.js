@@ -48,7 +48,6 @@ export default function VolunteerList(props) {
                 phone={volunteer.whatsappNo}
                 type='volunteer'
                 available={volunteer.isAvailable}
-                timeSlots={volunteer.timeSlots}
               />
             </Col>
           ))}
