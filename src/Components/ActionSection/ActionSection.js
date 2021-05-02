@@ -31,7 +31,7 @@ const ActionSection = (props) => {
   };
   return (
     <>
-      <Row justify='center'>
+      <Row id="services" justify='center'>
         <Col lg={8} md={11} sm={11} xs={20}>
           <div className={classes.actionCard}>
             <p style={{ textAlign: "left" }}>
@@ -109,10 +109,10 @@ const ActionSection = (props) => {
           <p>Thank you for Taking The Initiative</p>
         </div>
         <br /><br />
-        <a href="tel:9871597556"><Button  block className={classes.actionButton}>
+        <a href="tel:9871597556"><Button block className={classes.actionButton}>
           Please Contact at 9871597556
             </Button></a>
-    
+
       </Modal>
     </>
   );

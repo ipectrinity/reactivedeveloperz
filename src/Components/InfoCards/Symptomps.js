@@ -9,7 +9,7 @@ import coughing from '../../Assets/coughing.png'
 
 export default function Symptomps() {
     return (
-        <Row gutter={[32, 32]} justify='center'>
+        <Row id="symptoms" gutter={[32, 32]} justify='center'>
             <Col lg={8} md={11} sm={11} xs={20}>
                 <Row justify="center">
                     <Col className={classes.SymptompsIcon} span={10}>
