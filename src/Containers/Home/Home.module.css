@@ -21,7 +21,7 @@
     color: red;
 }
 .actionCard{
-    /* display: grid; */
+    /* display: flex; */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 20px #AAAAAA29;
     border-radius: 5px;
@@ -67,3 +67,53 @@
     margin: 0 .5rem 10px 0 !important;
     /* margin-bottom: 10px; */
 }
+
+
+
+
+/* home page buttons */
+
+.selectedcheckBox1{
+    width: 20vw;
+    height: 105px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    border: 1px solid #2F61F5;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 7px 0;
+    cursor: pointer;
+  
+  }
+  
+  .text{
+    font: normal normal normal 14px/17px Lato;
+    letter-spacing: 0px;
+    margin-top: 6px;
+    font-size: normal;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .iconBox{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .image{
+      height: 2.2rem;
+      cursor: pointer;
+  }
+
+  @media screen and (max-width:600px) {
+      .image{
+          height: auto;
+      }
+
+      .selectedcheckBox1{
+        height: 85px;
+        
+      }
+  }
